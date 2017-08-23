@@ -59,6 +59,7 @@ public class LoadBalancerStatusResource extends RestResource {
     }
 
     @GET
+    @HEAD
     @Timed
     @Produces(MediaType.TEXT_PLAIN)
     @ApiOperation(value = "Get status of this Graylog server node for load balancers. " +
